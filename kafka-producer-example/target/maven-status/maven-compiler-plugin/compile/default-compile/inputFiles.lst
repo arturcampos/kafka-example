@@ -1,7 +1,8 @@
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/config/KafkaTopicConfig.java
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/KafkaExampleApplication.java
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/service/MessageService.java
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/dto/SampleRequest.java
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/converter/PersonMapper.java
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/api/MessageAPI.java
-/home/artur/development/estudos/kafka-producer-example/src/main/java/com/project/kafkaexample/domain/Person.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/dto/SampleRequest.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/converter/PersonMapper.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/KafkaExampleApplication.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/config/KafkaProducerConfig.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/config/KafkaTopicConfig.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/domain/Person.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/api/MessageAPI.java
+/home/artur/development/estudos/kafka-example/kafka-producer-example/src/main/java/com/project/kafkaexample/service/MessageService.java

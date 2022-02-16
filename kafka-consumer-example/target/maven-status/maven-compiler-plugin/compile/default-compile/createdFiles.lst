@@ -1,5 +1,3 @@
-com/project/kafkaexample/service/MessageService$1.class
-com/project/kafkaexample/api/MessageAPI.class
 com/project/kafkaexample/config/KafkaTopicConfig.class
 com/project/kafkaexample/converter/PersonMapper.class
 com/project/kafkaexample/dto/SampleRequest.class

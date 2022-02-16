@@ -2,11 +2,11 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <artifactId>kafkaexample</artifactId>
+  <artifactId>kafkaproducerexample</artifactId>
   <description>Spring Boot springboot template</description>
   <groupId>com.project</groupId>
   <modelVersion>4.0.0</modelVersion>
-  <name>kafka-example</name>
+  <name>kafka-producer-example</name>
   <parent>
     <artifactId>spring-boot-starter-parent</artifactId>
     <groupId>org.springframework.boot</groupId>
