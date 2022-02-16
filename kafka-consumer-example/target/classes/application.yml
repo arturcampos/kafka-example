@@ -1,0 +1,29 @@
+spring:
+  profile: dev
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: sample-group-id
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+kafka:
+  topic-name: sampletopic
+  messages-per-request: 10
