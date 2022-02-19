@@ -1,7 +1,10 @@
+com/project/kafkaexample/repository/PersonRepository.class
 com/project/kafkaexample/config/KafkaTopicConfig.class
 com/project/kafkaexample/converter/PersonMapper.class
-com/project/kafkaexample/dto/SampleRequest.class
+com/project/kafkaexample/dto/PersonKafkaDTO$PersonKafkaDTOBuilder.class
 com/project/kafkaexample/service/MessageService.class
 com/project/kafkaexample/domain/Person$PersonBuilder.class
+com/project/kafkaexample/dto/PersonKafkaDTO.class
 com/project/kafkaexample/domain/Person.class
 com/project/kafkaexample/KafkaExampleApplication.class
+com/project/kafkaexample/service/PersonService.class

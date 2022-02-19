@@ -11,10 +11,12 @@ spring:
           json:
             trusted:
               packages: '*'
-
+  data:
+    mongodb:
+      uri: mongodb://root:M0rd0r!@localhost:27017/persons?ssl=false&authSource=admin&retryWrites=true
 
 server:
-  port: 8080
+  port: 8081
   servlet:
     context-path: /api
 
