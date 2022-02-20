@@ -2,7 +2,6 @@ package com.project.kafkaexample.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,9 +13,11 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class PersonKafkaDTO {
+public class PersonDTO {
 
-  private String name;
+    private String id;
 
-  private String email;
+    private String name;
+
+    private String email;
 }

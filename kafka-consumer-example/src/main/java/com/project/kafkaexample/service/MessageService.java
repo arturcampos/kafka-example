@@ -1,6 +1,7 @@
 package com.project.kafkaexample.service;
 
 import com.project.kafkaexample.converter.PersonMapper;
+import com.project.kafkaexample.domain.Person;
 import com.project.kafkaexample.dto.PersonKafkaDTO;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
@@ -25,17 +26,19 @@ public class MessageService {
       clientIdPrefix = "json",
       containerFactory = "kafkaListenerContainerFactory")
   public void listenAsObject(
-      ConsumerRecord<String, Object> cr,
-      @Payload Object payload,
+      ConsumerRecord<String, PersonKafkaDTO> cr,
+      @Payload PersonKafkaDTO payload,
       @Headers Map<String, Object> headers) {
     log.info(
         "Received key {}: Type [{}] | Payload: {} | Record: {}",
         cr.key(),
-        getObjectType(headers.get("objectType")),
+        getObjectType(headers.get("__TypeId__")),
         payload,
         cr);
 
-    personService.save(PersonMapper.toDomain((PersonKafkaDTO)payload));
+    //Person person = getPerson(payload, headers);
+
+    personService.save(PersonMapper.toDomain(payload));
   }
 
   private Object getObjectType(Object objectType) {

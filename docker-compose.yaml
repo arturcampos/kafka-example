@@ -1,6 +1,19 @@
 version: "3"
 
 services:
+  
+  db:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: M0rd0r!
+    ports:
+      - "27017:27017"
+    extra_hosts: 
+      - "host.docker.internal:172.17.0.1"
+    volumes:
+      - "/tmp/.mongodb:/data/db"
   producer:
     build: ./kafka-producer-example
     container_name: kafka-producer

@@ -11,6 +11,9 @@ spring:
           json:
             trusted:
               packages: '*'
+            value:
+              default:
+                type: "com.project.kafkaexample.dto.PersonKafkaDTO"
   data:
     mongodb:
       uri: mongodb://root:M0rd0r!@host.docker.internal:27017/persons?ssl=false&authSource=admin&retryWrites=true
